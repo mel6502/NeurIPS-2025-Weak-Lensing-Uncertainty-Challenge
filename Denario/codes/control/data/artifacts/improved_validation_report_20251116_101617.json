@@ -1,0 +1,55 @@
+{
+  "model_path": "data/models/improved_cnn_20251116_101617.pth",
+  "scaler_path": "data/artifacts/improved_label_scaler_20251116_101617.npz",
+  "pred_means_path": "data/artifacts/improved_val_pred_means_20251116_101617.npy",
+  "pred_sigmas_path": "data/artifacts/improved_val_pred_sigmas_20251116_101617.npy",
+  "y_val_path": "data/artifacts/improved_val_truth_20251116_101617.npy",
+  "val_score": 10.245786666870117,
+  "val_mse": 0.0002595521218609065,
+  "coverage_within_1sigma": [
+    1.0,
+    1.0
+  ],
+  "avg_sigma": [
+    0.08282279968261719,
+    0.05426664277911186
+  ],
+  "med_sigma": [
+    0.06598326563835144,
+    0.054490283131599426
+  ],
+  "mean_residual": [
+    -0.00021505728363990784,
+    0.006008361931890249
+  ],
+  "std_residual": [
+    0.017077671363949776,
+    0.013831512071192265
+  ],
+  "config": {
+    "epochs": 10,
+    "batch_size": 16,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "lam_penalty": 1000.0,
+    "calibration_alpha": 0.05,
+    "scheduler": "CosineAnnealingLR",
+    "device": "cpu",
+    "H": 1274,
+    "W": 176,
+    "Ncosmo": 6,
+    "Nsys": 12,
+    "train_samples": 60,
+    "val_samples": 12,
+    "img_mean": -5.0615183239225424e-05,
+    "img_std": 0.034764311150599775,
+    "used_synthetic": true
+  },
+  "modifications": [
+    "EnhancedCNN with residual blocks, GroupNorm, SiLU, squeeze-excitation, and adaptive pooling",
+    "Challenge-aligned loss with added calibration penalty on normalized residuals",
+    "AdamW optimizer with cosine annealing schedule",
+    "Gradient clipping for stability",
+    "Concise epoch-level logging and artifact saving"
+  ]
+}

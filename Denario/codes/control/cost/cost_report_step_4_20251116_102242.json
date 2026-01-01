@@ -1,0 +1,58 @@
+[
+  {
+    "Agent": "control starter",
+    "Cost ($)": 0.00763375,
+    "Prompt Tokens": 1843.0,
+    "Completion Tokens": 533.0,
+    "Total Tokens": 2376.0,
+    "Model": "gpt-5-2025-08-07"
+  },
+  {
+    "Agent": "engineer",
+    "Cost ($)": 0.14640375,
+    "Prompt Tokens": 39043.0,
+    "Completion Tokens": 9760.0,
+    "Total Tokens": 48803.0,
+    "Model": "gpt-5-2025-08-07"
+  },
+  {
+    "Agent": "terminator",
+    "Cost ($)": 0.0412,
+    "Prompt Tokens": 14880.0,
+    "Completion Tokens": 2260.0,
+    "Total Tokens": 17140.0,
+    "Model": "gpt-5-2025-08-07"
+  },
+  {
+    "Agent": "engineer response formatter",
+    "Cost ($)": 0.043593,
+    "Prompt Tokens": 7390.0,
+    "Completion Tokens": 8060.0,
+    "Total Tokens": 15450.0,
+    "Model": "o3-mini-2025-01-31"
+  },
+  {
+    "Agent": "control",
+    "Cost ($)": 0.05113,
+    "Prompt Tokens": 35704.0,
+    "Completion Tokens": 650.0,
+    "Total Tokens": 36354.0,
+    "Model": "gpt-5-2025-08-07"
+  },
+  {
+    "Agent": "executor response formatter",
+    "Cost ($)": 0.0087802,
+    "Prompt Tokens": 7578.0,
+    "Completion Tokens": 101.0,
+    "Total Tokens": 7679.0,
+    "Model": "o3-mini-2025-01-31"
+  },
+  {
+    "Agent": "Total",
+    "Cost ($)": 0.2987407,
+    "Prompt Tokens": 106438.0,
+    "Completion Tokens": 21364.0,
+    "Total Tokens": 127802.0,
+    "Model": NaN
+  }
+]

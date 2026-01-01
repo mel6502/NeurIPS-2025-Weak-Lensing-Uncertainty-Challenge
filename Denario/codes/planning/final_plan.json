@@ -1,0 +1,72 @@
+{
+    "sub_tasks": [
+        {
+            "bullet_points": [
+                "Load the weak-lensing intensity maps and associated labels from the provided dataset.",
+                "Apply the noising process to the training data to simulate realistic observational noise.",
+                "Normalize/standardize the dataset (e.g., per-channel mean/variance normalization or min–max scaling) before feeding it into the CNN model to improve convergence and performance.",
+                "Split the dataset into training and validation sets, ensuring no overlap in nuisance parameters.",
+                "Implement the baseline CNN model provided in the starting kit, ensuring it outputs both parameter predictions and uncertainty estimates.",
+                "Train the baseline model on the training set and validate it on the validation set.",
+                "Save the trained model and its predictions for further analysis."
+            ],
+            "sub_task": "Preprocess the dataset and implement the baseline Convolutional Neural Network (CNN) model.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Compute the success metric (score) for the baseline model on the validation set.",
+                "Compute and analyze residuals (differences between predicted and true values) for Ω_m and S_8 to identify any systematic biases in the baseline model.",
+                "Generate plots comparing predicted vs. true values for Ω_m and S_8, including error bars.",
+                "Visualize the distribution of predicted uncertainties (σ_{Ω_m} and σ_{S_8}).",
+                "Save all plots and computed statistics for interpretation."
+            ],
+            "sub_task": "Evaluate the baseline model and generate key statistics and plots.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Experiment with architectural changes to the CNN, such as adding more layers, using different activation functions, or incorporating dropout for regularization.",
+                "Test different optimizers (e.g., AdamW, SGD with momentum) and learning rate schedules (e.g., cosine decay, StepLR, OneCycle) to enhance performance.",
+                "Implement a more sophisticated loss function that better aligns with the success metric.",
+                "Train the modified model on the training set and validate it on the validation set.",
+                "Save the modified model and its predictions for further analysis."
+            ],
+            "sub_task": "Modify the baseline CNN model to improve performance.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Compute the success metric (score) for the modified model on the validation set.",
+                "Generate comparative plots showing the performance of the baseline and modified models.",
+                "Include a statistical test (e.g., paired t-test) to quantitatively compare the performance of the baseline and modified models.",
+                "Highlight improvements in parameter predictions and uncertainty estimates.",
+                "Save all plots and computed statistics for interpretation."
+            ],
+            "sub_task": "Evaluate the modified model and generate comparative statistics and plots.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Use the best-performing model (baseline or modified) to predict Ω_m, S_8, and their uncertainties for the test set.",
+                "Save the predictions and uncertainties in the exact submission-compatible format.",
+                "Add a validation step to check the file schema, ordering, datatypes, and required metadata before submission.",
+                "Generate plots and statistics summarizing the test set predictions."
+            ],
+            "sub_task": "Perform inference on the test set using the best-performing model.",
+            "sub_task_agent": "engineer"
+        },
+        {
+            "bullet_points": [
+                "Summarize the methodology and key findings from the analysis.",
+                "Discuss the performance of the baseline and modified models, referencing the computed scores and generated plots.",
+                "Interpret the results, highlighting the accuracy of parameter predictions and the reliability of uncertainty estimates.",
+                "Explicitly discuss model limitations and potential areas for future improvement (e.g., data bias, uncertainty calibration, out-of-distribution robustness).",
+                "Provide insights into the astrophysical implications of the findings.",
+                "Include references to all relevant plots and statistics generated in the previous steps."
+            ],
+            "sub_task": "Write the full Results section of the report.",
+            "sub_task_agent": "researcher"
+        }
+    ]
+}

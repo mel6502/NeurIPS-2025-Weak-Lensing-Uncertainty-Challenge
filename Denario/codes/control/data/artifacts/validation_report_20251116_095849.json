@@ -1,0 +1,46 @@
+{
+  "model_path": "data/models/baseline_cnn_20251116_095849.pth",
+  "scaler_path": "data/artifacts/label_scaler_20251116_095849.npz",
+  "pred_means_path": "data/artifacts/val_pred_means_20251116_095849.npy",
+  "pred_sigmas_path": "data/artifacts/val_pred_sigmas_20251116_095849.npy",
+  "y_val_path": "data/artifacts/val_truth_20251116_095849.npy",
+  "val_score": -6.352834224700928,
+  "val_mse": 0.007192444056272507,
+  "coverage_within_1sigma": [
+    0.5,
+    0.5
+  ],
+  "avg_sigma": [
+    0.08724382519721985,
+    0.07554065436124802
+  ],
+  "med_sigma": [
+    0.08897513896226883,
+    0.07579237222671509
+  ],
+  "mean_residual": [
+    0.06340919435024261,
+    0.046358708292245865
+  ],
+  "std_residual": [
+    0.07549665123224258,
+    0.05015265941619873
+  ],
+  "config": {
+    "epochs": 8,
+    "batch_size": 16,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0001,
+    "lam_penalty": 1000.0,
+    "device": "cpu",
+    "H": 1274,
+    "W": 176,
+    "Ncosmo": 6,
+    "Nsys": 12,
+    "train_samples": 60,
+    "val_samples": 12,
+    "img_mean": -4.53980422796565e-05,
+    "img_std": 0.034749361304360106,
+    "used_synthetic": true
+  }
+}
